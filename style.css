@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.outer-container {
+    width: 100vw;
+    height: 100vh;
+}
+
+.container {
+    width: 30em;
+    height: 10em;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(53, 50, 50);
+    display: grid;
+    grid-template-columns: 1fr 150px;
+    gap: 10px;
+    align-items: center;
+    border-radius: .5em;
+}
+
+button {
+    width: 9.5em;
+    height: 3em;
+    border: none;
+    border-radius: .2em;
+    box-shadow: rgba(25, 25,25, .88);
+    color: white;
+    background-color: rgba(8, 8, 172, 0.938);
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 14px;
+    font-weight: 900px;
+    cursor: pointer;
+}
+
+input{
+    height: 3em;
+    margin-left: 10px;
+    border: none;
+    border-radius: .2em;
+    box-shadow: rgba(25, 25,25, .88);
+}
+
+input:hover {
+    border-bottom: 2px solid black;
+}
+.under {
+    width: 30em;
+    height: 10em;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(53, 50, 50);
+    align-items: center;
+    border-radius: .5em;
+}
+
+li {
+    margin-left: 20px;
+    padding-top: 10px;
+    list-style: none;
+}
