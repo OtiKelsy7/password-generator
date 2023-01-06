@@ -1,29 +1,4 @@
-
-//     // const outerDiv = document.getElementById("out");
-//     // const passwordDiv = document.createElement("Div");
-//     // passwordDiv.classList.add("under");
-//     // outerDiv.append(passwordDiv)
-
-// //functionalities start
-//     let chars = "0123456789abcdefghijklmnopqrstuvwxyz!@#$%^&*()ABCDEFGHIJKLMNOPQRSTUVWXYZ";
-//     let passwordLength = 8;
-//     let generatedPassword = ""
-//     const input = document.getElementById("password-input");
-
-//     const button = document.getElementById("password-button");
-//     for(let i = 0; i<= passwordLength; i++) {
-//         const new1 = Math.floor(Math.random() * chars.length)
-//     }
-
-//     button.addEventListener("click", ()=> {
-       
-//     })
-
-//     input.value = new1;
-
-//     function generate() {
-        
-//     }
+//functionalities start
 var password=document.getElementById("password-input");
 
  function genPassword() {

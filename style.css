@@ -24,7 +24,7 @@ body {
     width: 30em;
     height: 10em;
     position: absolute;
-    top: 20%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: rgb(53, 50, 50);
@@ -49,6 +49,14 @@ button {
     cursor: pointer;
 }
 
+h1 {
+    color: rgba(8, 8, 172, 0.938);
+    font-size: 30px;
+    font-weight: 900px;
+    position: absolute;
+    top: 30%;
+}
+
 input{
     height: 3em;
     margin-left: 10px;
@@ -62,7 +70,7 @@ input:hover, input:focus {
     border-bottom: 2px solid black;
 }
 
-span {
+span.published {
     font-style: italic;
     color: rgba(8, 8, 172, 0.938);
 }
