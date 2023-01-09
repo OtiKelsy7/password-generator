@@ -28,10 +28,10 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     background-color: rgb(53, 50, 50);
-    display: grid;
-    grid-template-columns: 1fr 150px;
-    gap: 10px;
+    display: flex;
     align-items: center;
+    justify-content: center;
+    flex-direction: column;
     border-radius: .5em;
 }
 
@@ -47,6 +47,14 @@ button {
     font-size: 14px;
     font-weight: 900px;
     cursor: pointer;
+
+}
+
+.inner {
+    margin-top: 10px;
+    width: 300px;
+    display: flex;
+    justify-content: space-evenly;
 }
 
 h1 {
@@ -59,9 +67,9 @@ h1 {
 }
 
 input{
-    width: 14.5em;
+    width: 24.5em;
     height: 3em;
-    margin-left: 40px;
+    margin-left: 0px;
     border: none;
     border-radius: .2em;
     box-shadow: rgba(25, 25,25, .88);
@@ -81,4 +89,19 @@ footer {
     position: fixed;
     top: 90%;
     font-style: italic;
+}
+
+.popup {
+    width: 80px;
+    height: 30px;
+    background-color: rgba(25, 25,25, .98);
+    border-radius: .5em;
+    text-align: center;
+    padding-top: 3px;
+    color: white;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform:translate(-50%, -50%);
+    font-family: 'Source Sans Pro', sans-serif;
 }
