@@ -17,11 +17,12 @@ let outter = document.getElementById("out")
    var copyText = document.getElementById("password-input");
    copyText.select();
    document.execCommand("copy");
-   let copied = document.createElement("div")
+  
+   setTimeout(function(){
+     let copied = document.createElement("div")
    copied.classList.add("popup")
    copied.innerText = "copied"
    outter.append(copied)
-   setTimeout(copied, 1000);
-   clearTimeout(copied)
+   },2000);
  }
 //functionalities end
