@@ -14,15 +14,26 @@ let outter = document.getElementById("out")
  }
 
  function copyPassword() {
-   var copyText = document.getElementById("password-input");
+   let copyText = document.getElementById("password-input");
    copyText.select();
    document.execCommand("copy");
   
-   setTimeout(function(){
-     let copied = document.createElement("div")
-   copied.classList.add("popup")
-   copied.innerText = "copied"
+  function popUp() {
+   let copied = document.createElement("div");
+   copied.classList.add("popup");
+   copied.innerText = "copied";
    outter.append(copied)
-   },2000);
+   popUp.style.opacity = '1';
+   popUp.style.bottom = '100px';
+   setTimeout( ()=>{
+    popUp.style.opacity = '0';
+    popUp.style.bottom = '-10px';
+  }, 1500);
+  }
+ 
+ 
  }
+
+
+   
 //functionalities end
