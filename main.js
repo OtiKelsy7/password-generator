@@ -18,20 +18,12 @@ let outter = document.getElementById("out")
    copyText.select();
    document.execCommand("copy");
   
-  function popUp() {
-   let copied = document.createElement("div");
-   copied.classList.add("popup");
-   copied.innerText = "copied";
+   setTimeout(function(){
+     let copied = document.createElement("div")
+   copied.classList.add("popup")
+   copied.innerText = "copied"
    outter.append(copied)
-   popUp.style.opacity = '1';
-   popUp.style.bottom = '100px';
-   setTimeout( ()=>{
-    popUp.style.opacity = '0';
-    popUp.style.bottom = '-10px';
-  }, 1500);
-  }
- 
- 
+   },2000);
  }
 
 
