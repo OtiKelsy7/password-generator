@@ -17,12 +17,14 @@ let outter = document.getElementById("out")
    var copyText = document.getElementById("password-input");
    copyText.select();
    document.execCommand("copy");
+   let copied = document.createElement("div")
+    copied.classList.add("popup")
+    copied.innerText = "copied";
+    copied.style.opacity = '1';
+    outter.append(copied);
   
    setTimeout(function(){
-     let copied = document.createElement("div")
-   copied.classList.add("popup")
-   copied.innerText = "copied"
-   outter.append(copied)
+    copied.style.opacity = '0';
    },2000);
  }
 //functionalities end
