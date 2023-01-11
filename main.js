@@ -17,12 +17,20 @@ let outter = document.getElementById("out")
    var copyText = document.getElementById("password-input");
    copyText.select();
    document.execCommand("copy");
-  
-   setTimeout(function(){
-     let copied = document.createElement("div")
-   copied.classList.add("popup")
-   copied.innerText = "copied"
-   outter.append(copied)
-   },2000);
+   let copied = document.createElement("div")
+    copied.classList.add("popup")
+    copied.innerText = "copied";
+    outter.append(copied);
+
+    //Wait for JavaScript to create the div element before calling it
+    setTimeout( ()=>{
+      //show the element
+      copied.style.opacity = '1';
+      //Hide the element after showing it for 2 seconds
+      setTimeout(function(){
+        copied.style.opacity = '0';
+      },2000);
+  }, 100);
+   
  }
 //functionalities end
