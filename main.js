@@ -16,7 +16,7 @@ let outter = document.getElementById("out")
  function copyPassword() {
    let copyText = document.getElementById("password-input");
    copyText.select();
-   document.execCommand("copy");
+   document.execCommand("copy", true);
   
    setTimeout(function(){
      let copied = document.createElement("div")
