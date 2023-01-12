@@ -14,18 +14,21 @@ let outter = document.getElementById("out")
  }
 
  function copyPassword() {
-   let copyText = document.getElementById("password-input");
-   copyText.select();
-   document.execCommand("copy", true);
-  
-   setTimeout(function(){
-     let copied = document.createElement("div")
-   copied.classList.add("popup")
-   copied.innerText = "copied"
-   outter.append(copied)
-   },2000);
- }
-
+  let copyText = document.getElementById("password-input");
+  copyText.select();
+  document.execCommand("copy", true);
+  let copied = document.createElement("div");
+  copied.classList.add("popup");
+  copied.innerText = "copied"
+  outter.append(copied);
+ 
+  setTimeout(function(){
+   copied.style.opacity = '1';
+   setTimeout ( ()=>{
+     copied.style.opacity = '0'
+   }, 2000)
+  }, 100);
+}
 
    
 //functionalities end
